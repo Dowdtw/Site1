@@ -16,6 +16,6 @@ function set_cookie(name, value){
 		document.cookie = cookie;
 	}
 
-const myCookie = set_cookie("irclickid", "clickid");
+const myCookie = set_cookie("irclickid", clickid);
 	
 
