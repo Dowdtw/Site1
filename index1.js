@@ -11,7 +11,7 @@ window.onload = function() {
 }
 	
 	
-/*function setCookie()
+function setCookie()
 
 	{
 		const myCookie = {};
@@ -20,4 +20,4 @@ window.onload = function() {
 		const jsonString = JSON.stringify(myCookie);
 		document.cookie = myCookie.click +jsonString;
 	}
-*/
+
