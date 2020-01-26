@@ -1,13 +1,18 @@
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const clickIdFromURL = urlParams.get('ClickId');
-console.log(clickIdFromURL);
+const queryStringParams = window.location.search;
+const lowerCase = queryStringParams.toLowerCase();
+const myClickId = lowerCase.get('clickid')
+
+
+console.log(myClickId);
+
+
+/*
 const encodeClickId = encodeURIComponent(clickIdFromURL);
 const nowString = string(encodeClickId)
 
 localStorage.setItem(clickId, clickIdFromURL);
 
-document.cookie = (`irclickid = ${nowString}`);
+document.cookie = (`irclickid = ${nowString}`);*/
 
 	
 
