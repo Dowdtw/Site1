@@ -10,6 +10,6 @@ window.onload = function() {
 			} catch (err) {
 				console.log("Issues with Parsing URL Parameter's - " + err);
 			}
-}
+};
 
 </script>
