@@ -6,7 +6,7 @@ window.onload = function() {
 				console.log(clickid)
 				} catch (err) {
 				console.log('Issues with Parsing URL Params' + err);
-				document.cookie = "irClickId = clickid"
+				document.cookie = "irClickId = ${clickid}"
 			}
 }
 	
