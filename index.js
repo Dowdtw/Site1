@@ -1,6 +1,3 @@
-
-<script>
-
 window.onload = function() {
 			try {
 				var url_string = (window.location.href).toLowerCase();
@@ -12,4 +9,3 @@ window.onload = function() {
 			}
 }
 
-</script>
