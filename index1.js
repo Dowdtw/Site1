@@ -1,3 +1,5 @@
+const
+
 window.onload = function() {
 			try {
 				var url_string = (window.location.href).toLowerCase();
@@ -6,7 +8,7 @@ window.onload = function() {
 				console.log(clickid)
 				} catch (err) {
 				console.log('Issues with Parsing URL Params' + err);
-				document.cookie = "irClickId = ${clickid}"
+				document.cookie = (`irClickId = ${clickid}`)
 			}
 }
 	
