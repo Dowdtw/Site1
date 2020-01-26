@@ -14,17 +14,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <script>
-window.onload = function(){
-	try {
-		const url_string = (window.location.href).toLowerCase();
-		const url = new URL(url_string);
-		const clickid = url.searchParams.get('clickid');
-		console.log(clickid)
-	} catch (err){
-		console.log('issues with parsing url param' + err);
-	}
-}
 
+window.onload = function() {
+			try {
+				var url_string = (window.location.href).toLowerCase();
+				var url = new URL(url_string);
+       				const clickid = url.searchParams.get('clickid');
+				console.log(clickid
+				} catch (err) {
+				console.log('Issues with Parsing URL Params' + err);
+			}
+}
 
 </script>
 
