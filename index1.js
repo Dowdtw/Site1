@@ -1,12 +1,13 @@
-const queryString = window.location.search
-const urlParams = new URLSearchParams(queryString)
-const clickId = urlParams.get('ClickId')
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const clickIdFromURL = urlParams.get('ClickId');
+console.log(clickIdFromURL);
+const encodeClickId = encodeURIComponent(clickIdFromURL);
+const nowString = string(encodeClickId)
 
-function set_cookie(name, value){
-		const cookie = [name, '=', JSON.stringify(value), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
-		document.cookie = cookie;
-	}
+localStorage.setItem(clickIdFromURL);
 
-const myCookie = set_cookie("irclickid", clickId);
+document.cookie = (`irclickid = ${nowString}`);
+
 	
 
