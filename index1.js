@@ -7,8 +7,13 @@ window.onload = function() {
 				} catch (err) {
 				console.log('Issues with Parsing URL Params' + err);
 			}
+	document.cookie = "irClickId = clickid"
 	
-	function setCookie()
+	
+}
+	
+	
+/*function setCookie()
 
 	{
 		const myCookie = {};
@@ -17,5 +22,4 @@ window.onload = function() {
 		const jsonString = JSON.stringify(myCookie);
 		document.cookie = myCookie.click +jsonString;
 	}
-}
-
+*/
