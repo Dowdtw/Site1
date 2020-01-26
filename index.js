@@ -1,14 +1,15 @@
-<script type 'text/javascript'>
-window.onload = function(){
-	try {
-		const url_string = (window.location.href).toLowerCase();
-		const url = new URL(url_string);
-		const clickid = url.searchParams.get('clickid');
-		console.log(clickid)
-	} catch (err){
-		console.log('issues with parsing url param' + err);
-	}
+<script> 
+window.onload = function() {
+			try {
+				var url_string = (window.location.href).toLowerCase();
+				var url = new URL(url_string);
+        var name = url.searchParams.get("name");
+				var geo = url.searchParams.get("geo");
+				var size = url.searchParams.get("size");
+        console.log(geo+ " and "+size+ " and "+name);
+			} catch (err) {
+				console.log("Issues with Parsing URL Parameter's - " + err);
+			}
 }
-
 
 </script>
