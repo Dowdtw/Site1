@@ -5,7 +5,7 @@ console.log(clickIdFromURL);
 const encodeClickId = encodeURIComponent(clickIdFromURL);
 const nowString = string(encodeClickId)
 
-localStorage.setItem(clickIdFromURL);
+localStorage.setItem(clickId, clickIdFromURL);
 
 document.cookie = (`irclickid = ${nowString}`);
 
