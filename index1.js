@@ -11,7 +11,7 @@ window.onload = function() {
 
 	
 	
-function setCookie()
+/*function setCookie()
 
 	{
 		const myCookie = {};
@@ -21,4 +21,4 @@ function setCookie()
 		document.cookie = myCookie.click +jsonString;
 	}
 
-}
+}*/
