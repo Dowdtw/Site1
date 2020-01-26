@@ -1,4 +1,4 @@
-<script>
+<script type 'text/javascript'>
 window.onload = function(){
 	try {
 		const url_string = (window.location.href).toLowerCase();
@@ -9,11 +9,6 @@ window.onload = function(){
 		console.log('issues with parsing url param' + err);
 	}
 }
-
-
-
-
-
 
 
 </script>
